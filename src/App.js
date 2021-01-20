@@ -5,6 +5,7 @@ import { store } from "./actions/store";
 import Login from "./pages/Login";
 import Main from "./pages/Main";
 import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core';
 
 const theme = createMuiTheme({
@@ -33,7 +34,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <Login ></Login>
+        <NavBar></NavBar>
+        {/* <Login ></Login> */}
         {/* <Header ></Header>
         <Main></Main> */}
        
